@@ -1,5 +1,5 @@
 <template>
   <div>
-    <p class="text-sm">Brazil</p>
+    <p class="text-sm">Jamica</p>
   </div>
 </template>
