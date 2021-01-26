@@ -1,5 +1,5 @@
 <template>
-  <div>
-    <p class="text-sm">Panama</p>
+  <div class="container mx-auto py-4 flex justify-center">
+    <p class="text-2xl">Panama</p>
   </div>
 </template>
