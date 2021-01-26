@@ -8,36 +8,37 @@ import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
   {
-    path: "/",
-    name: "Home",
-    component: () =>
-      import(/*webpackChunkName: "HomePage"*/ "../views/Home.vue")
+    path: '/',
+    name: 'Home',
+    component: () => import(/*webpackChunkName: "HomePage"*/ '../views/Home.vue'),
   },
   {
-    path: "/brazil",
-    name: "brazil",
-    component: () =>
-      import(/*webpackChunkName: "Brazil"*/ "../views/Brazil.vue")
+    path: '/brazil',
+    name: 'brazil',
+    component: () => import(/*webpackChunkName: "Brazil"*/ '../views/Brazil.vue'),
   },
   {
-    path: "/hawaii",
-    name: "hawaii",
-    component: () =>
-      import(/*webpackChunkName: "Hawaii"*/ "../views/Hawaii.vue")
+    path: '/hawaii',
+    name: 'hawaii',
+    component: () => import(/*webpackChunkName: "Hawaii"*/ '../views/Hawaii.vue'),
   },
   {
-    path: "/jamaica",
-    name: "jamaica",
-    component: () =>
-      import(/*webpackChunkName: "Jamaica"*/ "../views/Jamaica.vue")
+    path: '/jamaica',
+    name: 'jamaica',
+    component: () => import(/*webpackChunkName: "Jamaica"*/ '../views/Jamaica.vue'),
   },
   {
-    path: "/panama",
-    name: "panama",
+    path: '/panama',
+    name: 'panama',
+    component: () => import(/*webpackChunkName: "Panama"*/ '../views/Panama.vue'),
+  },
+  {
+    path: '/details',
+    name: 'DestintaionDetails',
     component: () =>
-      import(/*webpackChunkName: "Panama"*/ "../views/Panama.vue")
-  }
-];
+      import(/*webpackChunkName: "DestintaionDetails"*/ '../views/DestintaionDetails.vue'),
+  },
+]
 
 const router = createRouter({
   linkExactActiveClass: "vue_router_active",
