@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto py-4 justify-center grid grid-cols-4 gap-4">
-    <p class="text-3xl flex justify-center col-span-4">All destinations</p>
+    <p class="text-2xl flex justify-center col-span-4">All Locations</p>
     <div
       class="col-1 transform hover:scale-105 motion-reduce:transform-none"
       v-for="item in destinations"
@@ -8,11 +8,11 @@
     >
       <router-link
         class="flex justify-center"
-        :to="{name: 'DestintaionDetails', params: {id: item.id}}"
+        :to="{name: 'DestintaionDetails', params: {id: item.id, desc: item.description}}"
         >{{ item.name }}</router-link
       >
       <figure>
-        <router-link :to="{name: 'DestintaionDetails', params: {id: item.id}}">
+        <router-link :to="{name: 'DestintaionDetails', params: {id: item.id, desc: item.description}}">
           <img :src="require(`../assets/${item.image}`)" :alt="item.name" />
         </router-link>
       </figure>
